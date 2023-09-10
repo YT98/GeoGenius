@@ -1,0 +1,33 @@
+.optionsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px 0 50px;
+}
+
+.optionContainer {
+    width: 50%;
+    height: 100px;
+    padding: 10px;
+}
+
+.optionButton {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: white;
+    padding: 5px 10px 5px 10px;
+    margin: 10px 0 10px 0;
+    font-size: 1.5em;
+}
+
+.flagImage {
+    margin: auto;
+    padding: 25px;
+    height: 250px;
+}
+
+.score {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
