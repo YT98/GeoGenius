@@ -1,0 +1,35 @@
+.menuLinksContainer {
+    text-align: center;
+}
+
+.menuLink {
+    font-family: 'Minecraft';
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.menuLink:hover {
+    animation: pulsate 2s infinite;
+}
+
+@keyframes pulsate {
+    0% {
+        text-shadow: 0 2px 26px rgba(35, 255, 57, 1);
+    }
+    50% {
+        text-shadow: 0 2px 26px rgba(35, 255, 57, 0.33);
+    }
+    100% {
+        text-shadow: 0 2px 26px rgba(35, 255, 57, 1);
+    }
+}
+
+.menuTitle {
+    font-family: 'Minecraft';
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 25px;
+}

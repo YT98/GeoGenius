@@ -1,0 +1,14 @@
+.title {
+    margin: auto;
+    animation: bounce 2s infinite;
+    padding: 50px;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(5px) perspective(200px) rotateX(10deg);
+    }
+    50% {
+        transform: translateY(0px) perspective(200px) rotateX(10deg);
+    }
+}
