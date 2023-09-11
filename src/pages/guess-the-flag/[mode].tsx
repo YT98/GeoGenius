@@ -46,6 +46,13 @@ const GuessTheFlagGame: React.FC = () => {
     }
   };
 
+  const handleRestartClick = () => {
+    // Reset game state
+    setScore(0);
+    setCurrentQuestionIndex(0);
+    setShowResult(false);
+  }
+
   const renderOptions = () => {
     return questions[currentQuestionIndex].optionsCountryNames.map((option, index) => (
       <li
@@ -67,10 +74,14 @@ const GuessTheFlagGame: React.FC = () => {
     <div>
       {questions.length > 0 ? (
           showResult ? (
-            <div>
-              <h2>Result</h2>
-              <p>Your Score: {score} / {questions.length}</p>
-              {/* TODO Add a button to restart the game */}
+            <div className={guessTheFlagStyles.resultContainer}>
+              <p className={guessTheFlagStyles.resultScore}>
+                Your Score: {score} / {questions.length}
+              </p>
+              <button
+                className={guessTheFlagStyles.restartButton}
+                onClick={handleRestartClick}
+              >Restart</button>
             </div>
           ) : (
             <div>
