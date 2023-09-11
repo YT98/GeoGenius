@@ -1,5 +1,5 @@
 # GeoGenius
-A simple geography game built with [Next.js](https://nextjs.org/).
+A simple geography game built with [Next.js](https://nextjs.org/). Available [here](https://geo-genius.vercel.app/).
 
 ## Screenshots
 
@@ -8,7 +8,6 @@ A simple geography game built with [Next.js](https://nextjs.org/).
 
 ## Features
 - [X] Guess the Flag game
-    - [ ] Bug: Double country names in options
 - [ ] Place the Country game
 - [ ] Name the Capital game
 - [ ] Responsive Design
