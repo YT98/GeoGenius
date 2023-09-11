@@ -2,10 +2,13 @@ import mysql from 'mysql2';
 import axios from 'axios';
 
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'geogenius',
-    password: 'pass',
-    database: 'geogenius'
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_DATABASE,
+    ssl: {
+        rejectUnauthorized: process.env.NODE_ENV == 'production'
+    }
 });
 
 connection.connect((err) => {
