@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import guessTheFlagStyles from '../../styles/guessTheFlag.module.css';
 
 interface Question {
-  correctCountryFlagUrl: string;
+  correctCountryCountryCode: string;
   correctCountryCountryName: string;
   optionsCountryNames: string[];
 }
@@ -90,7 +90,7 @@ const GuessTheFlagGame: React.FC = () => {
               </p>
               <img
                 className={guessTheFlagStyles.flagImage}
-                src={questions[currentQuestionIndex].correctCountryFlagUrl} alt="Flag"
+                src={`https://flagcdn.com/w320/${questions[currentQuestionIndex].correctCountryCountryCode}.png`} alt="Flag"
               />
               <ul className={guessTheFlagStyles.optionsContainer}>
                 {renderOptions()}

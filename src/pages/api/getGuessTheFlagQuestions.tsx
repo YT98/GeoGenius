@@ -9,7 +9,7 @@ interface Country extends RowDataPacket {
 }
 
 interface Question {
-    correctCountryFlagUrl: String,
+    correctCountryCountryCode: String,
     correctCountryCountryName: String,
     optionsCountryNames: String[]
 }
@@ -49,7 +49,7 @@ function generateFlagQuestion(countries: Country[], correctCountry: Country, cor
     shuffleArray(optionsCountryNames)
 
     return {
-        correctCountryFlagUrl: `/flags/${correctCountry.country_code}.png`,
+        correctCountryCountryCode: correctCountry.country_code.toLowerCase(),
         correctCountryCountryName: correctCountry.country_name,
         optionsCountryNames: optionsCountryNames
     }
